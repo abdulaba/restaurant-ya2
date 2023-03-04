@@ -1,6 +1,6 @@
 class Food < ApplicationRecord
   # Asociaciones
-  belongs_to :restaurant 
+  belongs_to :restaurant #.restauant
 
   # Active Record
   has_one_attached :photo
