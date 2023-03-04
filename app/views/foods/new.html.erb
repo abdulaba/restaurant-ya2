@@ -1,0 +1,16 @@
+<div class="container shadow border mt-5 bg-light w-50 p-3">
+  <div class="row">
+    <div class="col">
+      <%= simple_form_for [@restaurant, @food] do |f| %>
+        <%= f.input :name %>
+        <%= f.input :description %>
+        <%= f.input :price %>
+        <%= f.input :available%>
+        <%= f.input :photo, as: :file %>
+        <%= f.submit "Crear", class: "btn btn-primary" %> <%= link_to "Volver", root_path, class: "btn btn-warning" %>
+      <% end %>
+
+    </div>
+  </div>
+</div>
+
